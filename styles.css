@@ -122,6 +122,17 @@ button:hover {
     background: #0056b3;
 }
 //footer
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures full height */
+    margin: 0;
+}
+
+main {
+    flex: 1; /* Pushes the footer down */
+}
+
 footer {
     background: #333;
     color: white;
@@ -129,15 +140,5 @@ footer {
     padding: 15px;
     margin-top: 20px;
     position: relative;
-    bottom: 0;
     width: 100%;
-}
-
-footer a {
-    color: #00bfff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
