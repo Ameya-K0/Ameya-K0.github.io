@@ -58,3 +58,17 @@ main {
     background: #0056b3;
 }
 
+.resume-button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.resume-button:hover {
+    background: #0056b3;
+}
