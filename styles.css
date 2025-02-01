@@ -125,12 +125,12 @@ button:hover {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures full height */
+    min-height: 100vh; /* Makes body take full height of the screen */
     margin: 0;
 }
 
 main {
-    flex: 1; /* Pushes the footer down */
+    flex: 1; /* Pushes footer to the bottom */
 }
 
 footer {
@@ -139,6 +139,5 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 20px;
-    position: relative;
     width: 100%;
 }
