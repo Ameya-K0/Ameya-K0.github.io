@@ -145,40 +145,40 @@ footer {
     width: 100%;
 }
 //slideshow
-/* Align the text and images side by side */
+/* Ensure the text and images are side by side */
 .content-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 40px; /* Adds spacing between text and images */
     margin: 40px;
 }
 
-/* Job description styling */
+/* Ensure the job description stays at 40% of the width */
 .job-description {
     flex: 1;
     max-width: 40%;
-    padding: 20px;
+    text-align: left;
 }
 
-/* Slideshow container */
+/* Make sure the slideshow takes up 50% of the space */
 .slideshow-container {
     flex: 1;
     max-width: 50%;
     text-align: center;
-    position: relative;
 }
 
-/* Hide images by default */
+/* Slideshow Image Styling */
 .slide {
-    display: none;
     width: 100%;
     max-width: 500px;
+    display: none; /* Hide all images initially */
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Make first image visible initially */
+/* Show the first image */
 .slide:first-child {
     display: block;
 }
