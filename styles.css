@@ -4,7 +4,13 @@ body {
     padding: 0;
     background-color: #E0EBF5;
 }
-
+.about-container {
+    max-width: 800px;  /* Adjust width as needed */
+    margin: 0 auto;    /* Centers the section */
+    padding: 20px;     /* Adds spacing inside */
+    background-color: #B0C4DE; /* Light blue background (same as before) */
+    border-radius: 10px; /* Rounded corners for a cleaner look */
+    text-ali
 header {
     background: #16324F;
     color: white;
