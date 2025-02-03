@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #92B9DD;
+    background-color: #E0EBF5;
 }
 
 header {
@@ -144,41 +144,4 @@ footer {
     padding: 15px;
     width: 100%;
 }
-//slideshow
-/* Ensure the text and images are side by side */
-.content-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px; /* Adds spacing between text and images */
-    margin: 40px;
-}
 
-/* Ensure the job description stays at 40% of the width */
-.job-description {
-    flex: 1;
-    max-width: 40%;
-    text-align: left;
-}
-
-/* Make sure the slideshow takes up 50% of the space */
-.slideshow-container {
-    flex: 1;
-    max-width: 50%;
-    text-align: center;
-}
-
-/* Slideshow Image Styling */
-.slide {
-    width: 100%;
-    max-width: 500px;
-    display: none; /* Hide all images initially */
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Show the first image */
-.slide:first-child {
-    display: block;
-}
