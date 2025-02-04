@@ -139,9 +139,10 @@ main {
 }
 
 /* Footer Styling */
+/* Footer Styling */
 footer {
     background: #333;
-    color: white;
+    color: #D1E1F0; /* Change text color to D1E1F0 */
     text-align: center;
     padding: 20px 0; /* Increase vertical padding */
     width: 100%;
@@ -151,6 +152,18 @@ footer {
     justify-content: center; /* Centers content horizontally */
     font-size: 16px; /* Increase readability */
 }
+
+/* Ensure footer links also match the new color */
+footer a {
+    color: #D1E1F0;
+    text-decoration: none;
+}
+
+/* Change link color on hover */
+footer a:hover {
+    text-decoration: underline;
+}
+
 
 //Slideshow
 /* Slideshow container */
