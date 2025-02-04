@@ -188,7 +188,7 @@ footer {
 
 /* Move arrows closer to the images */
 .prev {
-    left: 10px; /* Adjust for better positioning */
+    left: 50px; /* Adjust for better positioning */
 }
 
 .next {
@@ -204,6 +204,16 @@ footer {
 .fade {
     animation: fadeEffect 1s ease-in-out;
 }
+/* Ensure all slides are hidden by default */
+.slide {
+    display: none;
+}
+
+/* Only display the first slide on load */
+.slide:first-child {
+    display: block;
+}
+
 
 @keyframes fadeEffect {
     from { opacity: 0.4; }
