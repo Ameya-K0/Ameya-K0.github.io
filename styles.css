@@ -153,27 +153,19 @@ footer {
 }
 
 //Slideshow
-
 /* Slideshow container */
 .slideshow-container {
     position: relative;
-    max-width: 600px;
+    max-width: 600px;  /* Adjust width as needed */
     margin: auto;
+    text-align: center;
 }
 
-/* Initially hide all slides */
-.slide {
-    display: none;
-}
-
-/* Display only the first slide initially */
-.slide:first-child {
-    display: block;
-}
-
-/* Image styling */
+/* Slideshow Images */
 .slide-image {
-    width: 100%;
+    width: 90%;  /* Adjust image size */
+    max-height: 350px; /* Set max height to avoid large images */
+    object-fit: contain; /* Ensures images maintain aspect ratio */
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -194,18 +186,18 @@ footer {
     user-select: none;
 }
 
-/* Hover effect */
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Position arrows */
+/* Move arrows closer to the images */
 .prev {
-    left: 10px;
+    left: 10px; /* Adjust for better positioning */
 }
 
 .next {
-    right: 10px;
+    right: 10px; /* Adjust for better positioning */
+}
+
+/* Hover effect */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Add fade animation */
@@ -217,4 +209,3 @@ footer {
     from { opacity: 0.4; }
     to { opacity: 1; }
 }
-
