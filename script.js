@@ -5,8 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("navbar-container").innerHTML = data;
         });
 });
-
-let slideIndex = 0;
+let slideIndex = 0; // Start at first slide
 showSlides(slideIndex);
 
 // Function to move slides forward or backward
@@ -17,13 +16,10 @@ function plusSlides(n) {
 // Function to display slides
 function showSlides(n) {
     let slides = document.getElementsByClassName("slide");
-    
-    if (n >= slides.length) {
-        slideIndex = 0; // Loop back to first slide
-    }
-    if (n < 0) {
-        slideIndex = slides.length - 1; // Loop to last slide
-    }
+
+    // Loop slides back to the start/end if out of range
+    if (n >= slides.length) { slideIndex = 0; }
+    if (n < 0) { slideIndex = slides.length - 1; }
 
     // Hide all slides
     for (let i = 0; i < slides.length; i++) {
@@ -38,3 +34,4 @@ function showSlides(n) {
 setInterval(() => {
     plusSlides(1);
 }, 5000);
+
