@@ -163,8 +163,8 @@ footer {
 
 /* Slideshow Images */
 .slide-image {
-    width: 90%;  /* Adjust image size */
-    max-height: 350px; /* Set max height to avoid large images */
+    width: 50%;  /* Adjust image size */
+    max-height: 300px; /* Set max height to avoid large images */
     object-fit: contain; /* Ensures images maintain aspect ratio */
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
