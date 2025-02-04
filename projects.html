@@ -19,8 +19,15 @@
         </section>
 
         <section class="project">
-            <h2>Project 2: [Project Name]</h2>
-            <p>Another project description here.</p>
+            <h2>Project 2: RISC (Reduced Instruction Set Computer) Machine</h2>
+            <p>I designed and implemented a simple RISC machine capable of read-write memory operations and arithmetic processing. The system follows a structured pipeline where:
+1️⃣ Instruction Fetch & Decode – The machine retrieves an instruction, which is then decoded by a finite state machine (FSM).
+2️⃣ Datapath Execution – The instruction flows through the datapath, where the desired computation is performed using Boolean logic and a combinational ALU (Arithmetic Logic Unit).
+3️⃣ Memory Operations – The computed result is stored in memory for future use.
+
+For development, I wrote all the code in Verilog using Visual Studio Code and compiled it on Quartus. I verified functionality by creating a testbench and running simulations in ModelSim to ensure that each instruction produced the expected output. Finally, I deployed the design onto an FPGA board (DE1-SOC) to demonstrate the working RISC machine in real hardware.
+
+This project was one of my first experiences with hardware design and Verilog, making it an exciting and valuable learning experience! </p>
             <a href="https://github.com/yourusername/project-repo" target="_blank">View on GitHub</a>
         </section>
     </main>
