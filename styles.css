@@ -153,17 +153,22 @@ footer {
     font-size: 16px; /* Increase readability */
 }
 
-/* Ensure footer links also match the new color */
+/* Ensure footer links are always #D1E1F0 */
 footer a {
-    color: #D1E1F0;
-    text-decoration: none;
+    color: #D1E1F0 !important;  /* Force color for links */
+    text-decoration: none; /* Remove underline */
 }
 
 /* Change link color on hover */
 footer a:hover {
     text-decoration: underline;
+    color: #B0C4DE; /* Slightly lighter blue when hovering */
 }
 
+/* Prevent visited links from turning purple */
+footer a:visited {
+    color: #D1E1F0 !important;
+}
 
 //Slideshow
 /* Slideshow container */
