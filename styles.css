@@ -161,9 +161,14 @@ footer {
     margin: auto;
 }
 
-/* Hide all slides by default */
+/* Initially hide all slides */
 .slide {
     display: none;
+}
+
+/* Display only the first slide initially */
+.slide:first-child {
+    display: block;
 }
 
 /* Image styling */
@@ -186,19 +191,21 @@ footer {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    user-select: none;
 }
 
+/* Hover effect */
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Position arrows */
 .prev {
-    left: 0;
+    left: 10px;
 }
 
 .next {
-    right: 0;
+    right: 10px;
 }
 
 /* Add fade animation */
