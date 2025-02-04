@@ -204,10 +204,6 @@ footer {
 .fade {
     animation: fadeEffect 1s ease-in-out;
 }
-/* Ensure all slides are hidden by default */
-.slide {
-    display: none;
-}
 
 /* Only display the first slide on load */
 .slide:first-child {
