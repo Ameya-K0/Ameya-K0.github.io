@@ -143,7 +143,13 @@ footer {
     background: #333;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0; /* Increase vertical padding */
     width: 100%;
+    min-height: 50px; /* Ensures proper height */
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    font-size: 16px; /* Increase readability */
 }
+
 
