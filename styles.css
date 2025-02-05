@@ -230,7 +230,7 @@ footer a:visited {
 
 /* Add fade animation */
 .fade {
-    animation: fadeEffect 1s ease-in-out;
+    animation: fadeEffect 0.5s ease-in-out;
 }
 
 
