@@ -6,29 +6,34 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 });
 let slideIndex = 0; // Start at first slide
-showSlides(slideIndex);
+document.addEventListener("DOMContentLoaded", function() {
+    showSlides(slideIndex); // Ensure only one image is shown at first
+});
 
-// Function to move slides forward or backward
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
-// Function to display slides
 function showSlides(n) {
     let slides = document.getElementsByClassName("slide");
 
-    // Loop slides back to the start/end if out of range
-    if (n >= slides.length) { slideIndex = 0; }
-    if (n < 0) { slideIndex = slides.length - 1; }
+    // If out of range, loop back
+    if (n >= slides.length) {
+        slideIndex = 0;
+    }
+    if (n < 0) {
+        slideIndex = slides.length - 1;
+    }
 
-    // Hide all slides
+    // Hide all slides before displaying one
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
 
-    // Show the current slide
+    // Show only the correct slide
     slides[slideIndex].style.display = "block";
 }
+
 
 // Auto-slide every 5 seconds (optional)
 setInterval(() => {
