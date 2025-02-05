@@ -172,31 +172,32 @@ footer a:visited {
 
 //Slideshow
 /* Ensure slideshow container is positioned relatively */
+/* Ensure slideshow container is positioned correctly */
 .slideshow-container {
     position: relative;
-    max-width: 600px;  /* Adjust based on your image size */
+    max-width: 600px; /* Match image width */
     margin: auto;
     text-align: center;
 }
 
 /* Slideshow Images */
 .slide-image {
-    width: 100%;  /* Ensures full width of the slideshow container */
-    max-height: 300px; /* Adjust height if needed */
+    width: 100%; /* Adjust width to fit container */
+    max-height: 300px; /* Ensures a reasonable height */
     object-fit: contain;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 /* Ensure all slides are hidden by default */
 .slide {
-    display: none; /* Hide all slides */
+    display: none; /* Hide all slides initially */
 }
 
-/* Only display the first slide on load */
+/* Show only the first slide on load */
 .slide:first-child {
     display: block;
 }
-
 
 /* Navigation Arrows */
 .prev, .next {
@@ -212,21 +213,22 @@ footer a:visited {
     cursor: pointer;
     transition: 0.3s;
     user-select: none;
-    z-index: 10; /* Ensures the buttons stay above the image */
+    z-index: 10; /* Ensures buttons stay above the images */
 }
 
-/* Move arrows closer to the image */
+/* Adjust position relative to the image */
 .prev {
-    left: 10px; /* Moves left arrow right next to the image */
+    left: 5px; /* Closer to the left edge of the image */
 }
 
 .next {
-    right: 10px; /* Moves right arrow right next to the image */
+    right: 5px; /* Closer to the right edge of the image */
 }
 
-/* Hover effect */
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+/* Ensure buttons are positioned within the slideshow container */
+.slideshow-container:hover .prev,
+.slideshow-container:hover .next {
+    opacity: 1;
 }
 
 /* Hover effect */
