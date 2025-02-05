@@ -240,6 +240,7 @@ footer a:visited {
     to { opacity: 1; }
 }
 
+
 /* Profile Image Container */
 /* About Me Section */
 .about-container {
@@ -260,9 +261,10 @@ footer a:visited {
 
 /* Style for the image */
 .about-image img {
-    width: 200px; /* Increase size (adjust as needed) */
-    height: auto;
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Ensure it doesn't grow */
     border-radius: 50%; /* Keeps circular shape */
+    object-fit: cover; /* Ensures proper cropping inside the circle */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
