@@ -241,18 +241,29 @@ footer a:visited {
 }
 
 /* Profile Image Container */
-.profile-image-container {
-    text-align: center;
-    margin-bottom: 15px;
+/* About Me Section */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Keeps text left, image right */
+    max-width: 900px; /* Adjust container width */
+    margin: 40px auto; /* Centers the section */
+    padding: 20px;
 }
 
-/* Profile Image Styling */
-.profile-image {
-    width: 150px;  /* Adjust size as needed */
-    height: 150px;
-    border-radius: 50%; /* Makes it circular */
-    object-fit: cover; /* Ensures proper cropping */
-    border: 3px solid #16324F; /* Adds a nice border */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a slight shadow */
+/* Style for the text */
+.about-text {
+    flex: 1;
+    text-align: left; /* Align text to the left */
+    padding-right: 20px; /* Adds spacing between text and image */
 }
+
+/* Style for the image */
+.about-image img {
+    width: 200px; /* Increase size (adjust as needed) */
+    height: auto;
+    border-radius: 50%; /* Keeps circular shape */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
 
