@@ -261,10 +261,10 @@ footer a:visited {
 
 /* Style for the image */
 .about-image img {
-    width: 150px; /* Set a fixed width */
-    height: 150px; /* Ensure it doesn't grow */
+    width: 200px; /* Set a fixed width */
+    height: auto; /* Ensure it doesn't grow */
     border-radius: 50%; /* Keeps circular shape */
-    object-fit: cover; /* Ensures proper cropping inside the circle */
+    /*object-fit: cover; /* Ensures proper cropping inside the circle */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
