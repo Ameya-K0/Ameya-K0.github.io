@@ -213,7 +213,7 @@ footer a:visited {
     cursor: pointer;
     transition: 0.3s;
     user-select: none;
-    z-index: 10; /* Ensures buttons stay above the images */
+    /*z-index: 10; /* Ensures buttons stay above the images */
 }
 
 /* Adjust position relative to the image */
